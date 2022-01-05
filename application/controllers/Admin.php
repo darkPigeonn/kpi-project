@@ -4,7 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Admin extends CI_Controller {
 	function __construct(){
 		parent::__construct();		
-		$this->load->model('admin_model');
+		// $this->load->model('admin_model');
 		$this->load->helper('url');
  
 	}
@@ -15,7 +15,7 @@ class Admin extends CI_Controller {
 		$this->load->view('admin/home');
 		$this->load->view('templates/footer_admin');
 	}
-	public function formItemInput()
+	public function ItemInputView()
 	{
 		$this->load->view('templates/header_admin');
 		$this->load->view('admin/form/itemInput');
@@ -94,7 +94,7 @@ class Admin extends CI_Controller {
 	public function getSection()
 	{
 	}
-	public function delGroup()
+	public function delSection()
 	{
 	}
 }
